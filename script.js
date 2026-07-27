@@ -70,12 +70,18 @@ form.addEventListener("submit", function (event) {
 
   //Displaying the results
   const output = document.getElementById("output");
+  const weekdayName = weekDays[dayNumber];
+  const weekdayNumber = dayNumber + 1;
 
-  output.innerHTML = `You were born on <strong> $[weekDays [dayNumber]]</strong>.
-<br><br>
-Your Akan name is 
-<br><br>
-<strong> ${akanName}</strong>`;
+  output.innerHTML = `
+    <p class="result-heading">You were born on <strong>${weekdayName}</strong>.</p>
+    <p class="result-detail">That is day number <strong>${weekdayNumber}</strong> in the week.</p>
+    <p class="result-name">Your Akan name is <strong>${akanName}</strong></p>
+  `;
+
+  output.classList.remove("show");
+  void output.offsetWidth;
+  output.classList.add("show");
 });
 
 

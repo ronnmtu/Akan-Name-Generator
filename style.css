@@ -56,6 +56,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease;
 }
 
 .form-section h2 {
@@ -108,17 +109,22 @@ button {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
-button :hover {
+button:hover {
   background: #b8860b;
   transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 
 #your-name{
-  background: var(#2E7D32);
+  background: #fdf2de;
   color: #4e342e;
   padding: 30px;
   border-radius: 15px;
@@ -130,10 +136,52 @@ button :hover {
   margin-bottom: 15px;
 }
 
-
-#output{
-  font-size: 1.3rem;
+.result-card {
+  font-size: 1.2rem;
   font-weight: bold;
+  background: linear-gradient(135deg, #fff8e7, #ffe7b3);
+  border: 2px solid #d4a017;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.result-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.result-heading {
+  font-size: 1.1rem;
+}
+
+.result-detail {
+  font-size: 1rem;
+  color: #6b4f2f;
+}
+
+.result-name {
+  font-size: 1.3rem;
+  color: #4e342e;
+  animation: popIn 0.7s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 footer {
@@ -142,6 +190,17 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width:600px) {
