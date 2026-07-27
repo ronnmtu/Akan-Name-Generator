@@ -58,4 +58,26 @@ body {
   margin-bottom: 40px;
 }
 
+.form-section h2 {
+  text-align: center;
+  color: #4e342e;
+  margin-bottom: 30px;
+}
 
+.input-group {
+  margin-bottom: 20px;
+}
+
+label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
