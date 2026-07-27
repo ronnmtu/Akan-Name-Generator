@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #fff8e7;
+  background: #fff8e7;
+  line-height: 1.6;
   color: #4e342e;
 }
 
