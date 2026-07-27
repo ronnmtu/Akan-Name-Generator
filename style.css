@@ -136,3 +136,11 @@ button :hover {
   font-weight: bold;
 }
 
+footer {
+  margin-top: 50px;
+  background: #4e342e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
