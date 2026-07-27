@@ -34,3 +34,26 @@ if(
 
   return;
 }
+
+//Splitting the year
+const CC = Math.floor(year / 100);
+const YY = year % 100;
+
+//calculating the day
+const dayNumber = Math.floor(
+
+  (
+    (4 * CC)
+    -
+    (2 * CC - 1)
+    +
+    ((5 * YY) / 4)
+    +
+    ((26 *(month + 1)) /10)
+    +
+    day
+  )
+  % 7
+);
+
+
