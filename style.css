@@ -87,3 +87,13 @@ input[type="number"]:focus {
   border-color:#D4A017;
 }
 
+.gender p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gender label {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
