@@ -126,3 +126,13 @@ button :hover {
   box-shadow: 0 8px 20px rgba(0,0,0, 0.15);
 }
 
+#your-name h2 {
+  margin-bottom: 15px;
+}
+
+
+#output{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
