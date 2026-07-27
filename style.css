@@ -110,3 +110,19 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
+button :hover {
+  background: #b8860b;
+  transform: translateY(-2px);
+}
+
+
+#your-name{
+  background: var(#2E7D32);
+  color: #4e342e;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0, 0.15);
+}
+
