@@ -97,3 +97,16 @@ input[type="number"]:focus {
   margin-right: 20px;
   cursor: pointer;
 }
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #D4A017;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
