@@ -391,6 +391,7 @@ button {
   border-radius: 28px;
   background: linear-gradient(180deg, rgba(78, 52, 46, 0.92) 0%, rgba(78, 52, 46, 0.72) 100%);
   color: #fff;
+  margin-top: 15px;
   margin-bottom: 32px;
 }
 
