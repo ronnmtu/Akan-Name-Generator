@@ -74,15 +74,80 @@ form.addEventListener("submit", function (event) {
   const weekdayNumber = dayNumber + 1;
 
   output.innerHTML = `
-    <p class="result-heading">You were born on <strong>${weekdayName}</strong>.</p>
-    <p class="result-detail">That is day number <strong>${weekdayNumber}</strong> in the week.</p>
-    <p class="result-name">Your Akan name is <strong>${akanName}</strong></p>
-  `;
+   <h3>${akanName}</h3>
+
+<p><strong>Day of Birth:</strong> ${weekDays[dayNumber]}</p>
+
+<p>
+You were born on a
+<strong>${weekDays[dayNumber]}</strong>,
+so your Akan name is
+<strong>${akanName}</strong>.
+</p>
+
+<p>
+Every Akan day name reflects an important cultural
+tradition passed down through generations in Ghana.
+</p> 
+
+<p>${meanings[akanName]}</p>`
+    ;
+
 
   output.classList.remove("show");
   void output.offsetWidth;
   output.classList.add("show");
 });
+
+document.getElementById("your-name").scrollIntoView({
+  behavior: "smooth"
+})
+
+const meanings = {
+
+  Kwasi:
+    "Traditionally given to boys born on Sunday.",
+
+  Kwadwo:
+    "Given to boys born on Monday and associated with peace and calmness.",
+
+  Kwabena:
+    "Traditionally given to boys born on Tuesday.",
+
+  Kwaku:
+    "Given to boys born on Wednesday.",
+
+  Yaw:
+    "Traditionally given to boys born on Thursday.",
+
+  Kofi:
+    "One of the most well-known Akan names, traditionally given to boys born on Friday.",
+
+  Kwame:
+    "Given to boys born on Saturday.",
+
+  Akosua:
+    "Traditionally given to girls born on Sunday.",
+
+  Adwoa:
+    "Traditionally given to girls born on Monday.",
+
+  Abenaa:
+    "Traditionally given to girls born on Tuesday.",
+
+  Akua:
+    "Traditionally given to girls born on Wednesday.",
+
+  Yaa:
+    "Traditionally given to girls born on Thursday.",
+
+  Afua:
+    "Traditionally given to girls born on Friday.",
+
+  Ama:
+    "Traditionally given to girls born on Saturday."
+
+}
 
 
 
