@@ -173,6 +173,26 @@ button:active {
   animation: popIn 0.7s ease;
 }
 
+.results-button {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.secondary-btn {
+  background: #D4A017;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
 @keyframes popIn {
   0% {
     transform: scale(0.95);
