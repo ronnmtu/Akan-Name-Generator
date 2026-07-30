@@ -16,13 +16,19 @@ Akan Name Generator is a web application that calculates the day of the week you
 - Calculates your birthday into the day of the week
 
 
+## BDD (Behavior-Driven Development)
+
+- As a user, I want to enter my birth date and gender so that I can discover my Akan day name.
+- As a user, I want the application to validate my date input so that invalid birthdays are rejected.
+- As a user, I want the app to display the correct Akan name for the day of the week I was born.
+
 ## Technologies used
 
- - HTML5
- - CSS3
- - JavaScript
- - Git
- - GitHub
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
 
 ## Setup
 
@@ -35,4 +41,31 @@ Akan Name Generator is a web application that calculates the day of the week you
 4. Optionally, use a live server extension or a local web server for the best experience.
 
 
+## Live Demo 
+GitHub Repository:
+
+https://github.com/ronnmtu/Anakin-Name-Generator
+
+Live Website:
+
+https://ronnmtu.github.io/Anakin-Name-Generator/
+
+
+## Contact information
+
+- Name: Ron Mutunga
+- GitHub: https://github.com/ronnmtu
+- Email: [your-email@example.com](mailto:your-email@example.com)
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Future Improvements
+
+Some possible improvements include:
+
+- Add a date picker input option
+- Include images and Ghana-inspired design elements
+- Support multiple languages
 
