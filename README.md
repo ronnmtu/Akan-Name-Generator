@@ -50,6 +50,14 @@ Live Website:
 
 https://ronnmtu.github.io/Anakin-Name-Generator/
 
+## Future Improvements
+
+Some possible improvements include:
+
+- Add a date picker input option
+- Include images and Ghana-inspired design elements
+- Support multiple languages
+
 
 ## Contact information
 
@@ -59,13 +67,7 @@ https://ronnmtu.github.io/Anakin-Name-Generator/
 
 ## License
 
-This project is open source and available under the MIT License.
+Copyright © 2026 Ron Jeremy Mutunga
 
-## Future Improvements
 
-Some possible improvements include:
-
-- Add a date picker input option
-- Include images and Ghana-inspired design elements
-- Support multiple languages
 
