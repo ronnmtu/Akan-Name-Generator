@@ -44,11 +44,14 @@ Akan Name Generator is a web application that calculates the day of the week you
 ## Live Demo 
 GitHub Repository:
 
+``` bash
 https://github.com/ronnmtu/Akan-Name-Generator
-
+```
 Live Website:
 
+```bash
 https://ronnmtu.github.io/Akan-Name-Generator/
+```
 
 ## Future Improvements
 
