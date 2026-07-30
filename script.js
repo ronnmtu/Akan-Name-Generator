@@ -1,7 +1,9 @@
-//Array of names, weekdays and meanings
+//array of names, weekdays and meanings
 const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// each name index match with the appropriate date index
+
 
 const meanings = {
   Kwasi: "Traditionally given to boys born on Sunday.",
@@ -23,6 +25,7 @@ const meanings = {
 const form = document.getElementById("akanForm");
 const output = document.getElementById("output");
 
+// this function is to show/ display the results of akan name after generating
 function showOutput(html) {
   if (!output) {
     return;
@@ -33,19 +36,20 @@ function showOutput(html) {
   void output.offsetWidth;
   output.classList.add("show");
   output.scrollIntoView({ behavior: "smooth", block: "start" });
+  // this makes go directly to results card after clicking the button
 }
 
 if (form) {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    //Reading inputs
+    //reading inputs
     const day = Number(document.getElementById("day").value);
     const month = Number(document.getElementById("month").value);
     const year = Number(document.getElementById("year").value);
     const gender = document.querySelector('input[name="gender"]:checked');
 
-    //Validating inputs
+    //validating inputs
     if (
       day < 1 ||
       day > 31 ||
@@ -59,7 +63,7 @@ if (form) {
       return;
     }
 
-    // Validate the actual calendar date, including month length and leap years
+    //validate the actual calendar date, including month length and leap years
     const date = new Date(year, month - 1, day);
     if (
       date.getFullYear() !== year ||
@@ -70,11 +74,12 @@ if (form) {
       return;
     }
 
-    // Calculate weekday index using the browser's reliable date engine
+    //calculate weekday index using the browser's reliable date engine
     const dayNumber = date.getDay();
     const akanName = gender.value === "male" ? maleNames[dayNumber] : femaleNames[dayNumber];
     const weekday = weekDays[dayNumber];
 
+    //this is the text that will show up when your name has been generated.
     showOutput(`
       <h3>${akanName}</h3>
       <p><strong>Day of birth:</strong> ${weekday}</p>
