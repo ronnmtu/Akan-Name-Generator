@@ -1,4 +1,4 @@
-# Anakin Name Generator
+# Akan Name Generator
 
 ## Author
 
@@ -44,11 +44,11 @@ Akan Name Generator is a web application that calculates the day of the week you
 ## Live Demo 
 GitHub Repository:
 
-https://github.com/ronnmtu/Anakin-Name-Generator
+https://github.com/ronnmtu/Akan-Name-Generator
 
 Live Website:
 
-https://ronnmtu.github.io/Anakin-Name-Generator/
+https://ronnmtu.github.io/Akan-Name-Generator/
 
 ## Future Improvements
 
