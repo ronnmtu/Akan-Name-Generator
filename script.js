@@ -23,15 +23,6 @@ const meanings = {
 const form = document.getElementById("akanForm");
 const output = document.getElementById("output");
 
-function isValidDate(day, month, year) {
-  const date = new Date(year, month - 1, day);
-  return (
-    date.getFullYear() === year &&
-    date.getMonth() === month - 1 &&
-    date.getDate() === day
-  );
-}
-
 function showOutput(html) {
   if (!output) {
     return;
@@ -68,22 +59,19 @@ if (form) {
       return;
     }
 
-    //Splitting the year
-    const CC = Math.floor(year / 100);
-    const YY = year % 100;
+    // Validate the actual calendar date, including month length and leap years
+    const date = new Date(year, month - 1, day);
+    if (
+      date.getFullYear() !== year ||
+      date.getMonth() !== month - 1 ||
+      date.getDate() !== day
+    ) {
+      alert("Please enter a valid date and select your gender.");
+      return;
+    }
 
-    //calculating the day
-    const dayNumber = Math.floor(
-
-      (
-        (4 * CC) -
-        (2 * CC - 1) +
-        ((5 * YY) / 4) +
-        ((26 * (month + 1)) / 10) +
-        day
-      ) % 7
-    );
-
+    // Calculate weekday index using the browser's reliable date engine
+    const dayNumber = date.getDay();
     const akanName = gender.value === "male" ? maleNames[dayNumber] : femaleNames[dayNumber];
     const weekday = weekDays[dayNumber];
 
