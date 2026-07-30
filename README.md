@@ -55,7 +55,7 @@ https://ronnmtu.github.io/Anakin-Name-Generator/
 
 - Name: Ron Mutunga
 - GitHub: https://github.com/ronnmtu
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [mutungaron@gmail.com](mailto:mutungaron@gmail.com)
 
 ## License
 
