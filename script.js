@@ -1,3 +1,4 @@
+//Array of names, weekdays and meanings
 const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -47,6 +48,7 @@ if (form) {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    //Reading inputs
     const day = Number(document.getElementById("day").value);
     const month = Number(document.getElementById("month").value);
     const year = Number(document.getElementById("year").value);
